@@ -24,7 +24,7 @@ const App = () => {
           </thead>
           <tbody>
             {
-              !data?<h4>No data found to display.</h4>:
+              !data?<tr><td>No data found to display.</td></tr>:
               data.map((ele)=>
               <tr>
                 <td>{ele.first_name}</td>
