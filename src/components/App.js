@@ -22,9 +22,8 @@ const App = () => {
             <th>Email</th>
             <th>Avatar</th>
           </thead>
-          <tbody>
+          {!data?<>No data found to display.</>:<tbody>
             {
-              !data?<tr>No data found to display.</tr>:
               data.map((ele)=>
               <tr>
                 <td>{ele.first_name}</td>
@@ -35,6 +34,7 @@ const App = () => {
               )
             }
           </tbody>
+}
         </table>
     </div>
   )
