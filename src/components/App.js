@@ -14,7 +14,7 @@ const App = () => {
     <div>
         {/* Do not remove the main div */}
         <h1>Blue Whales</h1>
-        <button onClick={()=>fetchData()}>Get User List</button>
+        <button onClick={()=>fetchData()} className="btn">Get User List</button>
         <table>
           <thead>
             <th>First Name</th>
@@ -24,7 +24,7 @@ const App = () => {
           </thead>
           <tbody>
             {
-              !data?<h4>No data found to display</h4>:
+              !data?<h4>No data found</h4>:
               data.map((ele)=>
               <tr>
                 <td>{ele.first_name}</td>
